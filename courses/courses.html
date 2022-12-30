@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container px-4 px-lg-5">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="file:///C:/Users/Zaki/Bureau/Projet%20JS/Home/Home.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/Zaki/Bureau/Projet%20JS/courses/courses.html">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/Zaki/Bureau/Projet%20JS/About/about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <div class="app">
+    <div class="Container">
+        <div>
+            <form class="d-flex">
+                <input class="form-control" type="search"
+                    placeholder="Search..." aria-label="Search" style=" outline: none;" id="input-search" class="form-control me-1">
+            </form>
+            <h6>Catégories:
+            </h6>
+            <button class="btn bg-transparent" onclick="ShowCourses('All')" id="btnall">All
+            </button>
+            <br>
+            <button class="btn bg-transparent" onclick="ShowCourses('html')" id="btnhtml">Html
+            </button>
+            <br>
+            <button class="btn bg-transparent" onclick="ShowCourses('css')" id="bntcss">Css
+            </button>
+            <br>
+            <button class="btn bg-transparent" onclick="ShowCourses('js')" id="btnjs">Js
+            </button>
+            <br>
+            <button class="btn bg-transparent" onclick="ShowCourses('php')" id="btnphp">Php
+            </button>
+            <br>
+            <h5>Price:
+            </h5>
+            <input type="range" id="slideprice" min="0" max="80" step="0.1">
+            <p id="valueslide">Value:$
+            </p>
+        </div>
+        <div>
+            <table id="courses-table"></table>
+            <p class="mb-1">&copy; Copyright ZakariaMessous</p>
+        </div>
+    </div>
+     </div>
+    <script src="courses.js">
+    </script>
+</body>
+
+</html>
